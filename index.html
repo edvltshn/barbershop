@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Информация<a>
+              <a href="#">Информация</a>
             </li>
             <li>
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a href="./price.html">Прайс-лист</a>
             </li>
             <li>
               <a href="#">Магазин</a>
@@ -24,17 +27,18 @@
             <li>
               <a href="#">Контакты</a>
             </li>
+            </ul>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
       </div>
-    <header>
+    </header>
     <main class="container">
       <div class="index-logo">
-        <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп "Бородинский"">
+        <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
-      <section class="features">
+      <section class="features clearfix">
         <div class="features-item">
           <b class="features-name">Быстро</b>
           <p>
@@ -54,8 +58,8 @@
           </p>
         </div>
       </section>
-        <div class="index-content">
-          <div class="index-contet-left">
+        <div class="index-content clearfix">
+          <div class="index-content-left">
             <h2 class="index-content-title">Новости</h2>
             <ul class="news-preview">
               <li>
@@ -77,19 +81,19 @@
             <h2 class="index-content-title">Фотогалерея</h2>
             <div class="gallery">
               <figure class="gallery-content">
-                <img src="img/photo-1.jpg" width="286" height="164" alt="">
+                <img src="img/gallery-preview1.jpg" width="286" height="164" alt="">
               </figure>
-              <button class="btn gallery-prev">Назад</button>
+              <button class="btn gallery-prev" disabled>Назад</button>
               <button class="btn gallery-next">Впред</button>
             </div>
           </div>
         </div>
-        <div class="index-content">
-          <div class="index-contet-left">
+        <div class="index-content clearfix">
+          <div class="index-content-left">
             <h2 class="index-content-title">Контактная информация</h2>
             <p>
               Барбершоп "Бородинский"<br>
-              Адрес: г. Санкт-Петербург, Б. Конюшенная> д. 19/8<br>
+              Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
               Телефон: +7 (812) 666-02-66
             </p>
             <p>
@@ -103,7 +107,7 @@
           <div class="index-content-right">
             <h2 class="index-content-title">Записаться</h2>
             <p>
-              Укажите желаемую дату и время и мы свяжемся с ваи для подтверждения брони
+              Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
             </p>
             <form class="appointment-form" action="https:echo.htmlacademy.ru" method="post">
               <input type="text" name="date" value="" placeholder="Дата">
@@ -116,7 +120,7 @@
         </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп Бородинский<br>
           Адрес: г.Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
