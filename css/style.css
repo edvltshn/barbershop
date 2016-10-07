@@ -703,7 +703,7 @@ body {
     margin-top: -280px;
     margin-left: -390px;
 
-    background: #e9e5dc url(".img/map.png");
+    background: #e9e5dc url("../img/map.png");
     border: 7px solid white;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
@@ -800,12 +800,12 @@ body {
 }
 
 .login-form input.icon-user {
-    background-image: url(.img/login-user.png);
+    background-image: url(../img/login-user.png);
     background-repeat: no-repeat;
 }
 
 .login-form input.icon-password {
-    background-image: url(.img/login-password);
+    background-image: url(../img/login-password);
     background-repeat: no-repeat;
 }
 
