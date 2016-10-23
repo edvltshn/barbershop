@@ -30,7 +30,7 @@
             </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#">Вход</a>
+          <a class="login" href="/login">Вход</a>
         </div>
       </div>
     </header>
@@ -101,7 +101,7 @@
               пн - пт: с 10:00 до 22:00<br>
               сб - вс: с 10:00 до 19:00
             </p>
-            <a class="btn js-open-map" href="#">Как проехать</a>
+            <a class="btn js-open-map" href="/contacts">Как проехать</a>
             <a class="btn" href="#">Обратная связь</a>
           </div>
           <div class="index-content-right">
@@ -167,6 +167,10 @@
     </div>
     <div class="modal-overlay "></div>
     <script type="text/javascript" src="js/popup.js">
+    </script>
+    <script type="text/javascript">
+      var html = document.documentElement;
+      html.className = html.className.replace("no-js", "js")
     </script>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=dOKvgCkHKkCcBCIT3fzincsCZb1GOhTy&amp;width=761&amp;height=566&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false&amp;id=yandex-map"></script>
   </body>
