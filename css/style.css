@@ -76,8 +76,6 @@ body {
 
 .main-navigation .active {
     position: relative;
-    
-    background-color: none;
 }
 
 .main-navigation .active a:hover{
@@ -504,7 +502,6 @@ body {
     list-style: none;
 }
 
-{
 .custom-list li {
     position: relative;
 
@@ -906,6 +903,58 @@ body {
 }
 
 .login-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+.showcase-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.showcase-checkbox {
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.showcase-checkbox:hover {
+    color: #663d15; 
+}
+
+.showcase-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000;
+}
+
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::before,
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000;
+}
+
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.showcase-checkbox input[type="checkbox"]:checked + 
 .checkbox-indicator::after {
     transform: rotate(-45deg);
 }
