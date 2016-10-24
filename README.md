@@ -1,3 +1,3 @@
 # barbershop
-my first htmlacademy project
+htmlacademy training project
 readme
