@@ -56,7 +56,7 @@
                 	<form class="showcase-filter" action="https://echo.htmlacademy.ru" method="get">
                 		<h2>Производители</h2>
                    		<label class="showcase-checkbox">
-	                   		<input type="checkbox" name="baxter">
+	                   		<input type="checkbox" name="baxter" checked>
 	                   		<span class="checkbox-indicator"></span>
 	                   		Baxter of California
 	                   	</label>
@@ -68,7 +68,7 @@
 	                   	</label>
 	                   	<br>
 	                   	<label class="showcase-checkbox">
-	                   		<input type="checkbox" name="suavecito">
+	                   		<input type="checkbox" name="suavecito" checked>
 	                   		<span class="checkbox-indicator"></span>
 	                   		Suavecito
 	                   	</label>
@@ -86,24 +86,25 @@
 	                   	</label>
 	                   	<br>
 	                   	<label class="showcase-checkbox">
-	                   		<input type="checkbox" name="american-crew">
+	                   		<input type="checkbox" name="american-crew" checked>
 	                   		<span class="checkbox-indicator"></span>
 	                   		American Crew
 	                   	</label>
-	                   	<h2>Группы товаров</h2>
+	                   	<h2 class="item-filter">Группы товаров</h2>
 	                   	<label class="showcase-radiobutton">
-	                   		<input type="radio" name="shaving">
+	                   		<input type="radio" name="showcase-radiobutton" value="shaving">
 	                   		<span class="radio-indicator"></span>
 	                   		Бритвенные принадлежности
 	                   	</label>
 	                   	<br>
 	                   	<label class="showcase-radiobutton">
-	                   		<input type="radio" name="care-means">
+	                   		<input type="radio" name="showcase-radiobutton" value="care-means" checked>
 	                   		<span class="radio-indicator"></span>
 	                   		Средства для ухода
 	                   	</label>
-	                   	<br><label class="showcase-radiobutton">
-	                   		<input type="radio" name="accessoires">
+	                   	<br>
+                      <label class="showcase-radiobutton">
+	                   		<input type="radio" name="showcase-radiobutton" value="accessoires">
 	                   		<span class="radio-indicator"></span>
 	                   		Аксессуары
 	                   	</label>
@@ -113,67 +114,67 @@
                 </div>
                 <div class="showcase-column-right">
                 	<div class="showcase-item">
-                		<img alt="Миниатюра товара" src="./img/showcase-preview-7">
+                		<a href="item.html"><img alt="Миниатюра товара" src="./img/showcase-preview-1.png"></a>
                 		<p>Набор для путешествий «BAXTER OF CALIFORNIA»</p>
                 		<div class="item-price">
                         <p>2900 руб.</p>
-                        <a class="btn">Купить</a>
-                      </div>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
                 	</div>
                 	<div class="showcase-item">
-                		<img alt="Миниатюра товара" src="./img/showcase-preview-8">
+                		<a href="#"><img alt="Миниатюра товара" src="./img/showcase-preview-2.png"></a>
                 		<p>Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</p>
                 		<div class="item-price">
                         <p>750 руб.</p>
-                        <a class="btn">Купить</a>
-                      </div>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
                 	</div>
                 	<div class="showcase-item">
-                		<img alt="Миниатюра товара" src="./img/showcase-preview-9">
+                		<a href="#"><img alt="Миниатюра товара" src="./img/showcase-preview-3.png"></a>
                 		<p>Гель для волос «SUAVECITO»</p>
                 		<div class="item-price">
                         <p>290 руб.</p>
-                        <a class="btn">Купить</a>
-                      </div>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
                 	</div>
                 	<div class="showcase-item">
-                		<img alt="Миниатюра товара" src="./img/showcase-preview-10">
+                		<a href="#"><img alt="Миниатюра товара" src="./img/showcase-preview-4.png"></a>
                 		<p>Глина для укладки волос «AMERICAN CREW»</p>
                 		<div class="item-price">
                         <p>500 руб.</p>
-                        <a class="btn">Купить</a>
-                      </div>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
                 	</div>
                 	<div class="showcase-item">
-                		<img alt="Миниатюра товара" src="./img/showcase-preview-11">
+                		<a href="#"><img alt="Миниатюра товара" src="./img/showcase-preview-5.png"></a>
                 		<p>Гель для волос «AMERICAN CREW»</p>
                 		<div class="item-price">
                         <p>300 руб.</p>
-                        <a class="btn">Купить</a>
+                        <a href="#" class="btn">Купить</a>
                       </div>
                 	</div>
                 	<div class="showcase-item">
-                		<img alt="Миниатюра товара" src="./img/showcase-preview-12">
+                		<a href="#"><img alt="Миниатюра товара" src="./img/showcase-preview-6.png"></a>
                 		<p>Набор для бритья «BAXTER OF CALIFORNIA»</p>
                 		<div class="item-price">
                         <p>3900 руб.</p>
-                        <a class="btn">Купить</a>
-                      </div>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
                 	</div>
-                    <ul class="showcase-navigation">
-                    	<li>
-                    		<a href="#">1</a>
-                    	</li>
-                    	<li>
-                    		<a href="#">2</a>
-                    	</li>
-                    	<li>
-                    		<a href="#">3</a>
-                    	</li>
-                    	<li>
-                    		<a href="#">4</a>
-                    	</li>
-                    </ul>
+                  <ul class="showcase-navigation">
+                      <li class="active">
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#">4</a>
+                      </li>
+                  </ul>               
                 </div>
             </div>
         </div>  

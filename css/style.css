@@ -570,6 +570,278 @@ body {
     margin-bottom: 0;
 }
 
+/* Стили для витрины магазина*/
+/* Колонки */
+
+.showcase-column-left {
+    width: 220px;
+}
+
+.showcase-column-right {
+    width: 700px;
+}
+
+.showcase-column-left {
+    float: left;
+}
+
+.showcase-column-right {
+    float: right;
+}
+
+.showcase-column-left *:first-child,
+.showcase-column-right *:first-child {
+    margin-top: 0;
+}
+
+
+/*Фильтр витрины*/
+    /*Стили для формы фильтра витрины*/
+
+.showcase-filter {
+    width: 180px; 
+}
+
+.showcase-filter .btn {
+    margin-top: 30px;
+}
+        /*Чекбоксы*/
+
+.showcase-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.showcase-checkbox {
+    display: block;
+    position: relative;
+    
+
+    margin-bottom: -7px;
+    padding-left: 30px;
+
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.showcase-checkbox:hover {
+    color: #663d15; 
+}
+
+.showcase-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000;
+}
+
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::before,
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000;
+}
+
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.showcase-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+
+        /*Радиобаттоны*/
+.showcase-radiobutton input[type="radio"] {
+    display: none;
+}
+
+.showcase-radiobutton {
+    display: block;
+    position: relative;
+  
+    margin-bottom: -7px;
+    padding-left: 30px;
+
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.showcase-radiobutton:hover {
+    color: #663d15; 
+}
+
+.showcase-radiobutton input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.showcase-radiobutton input[type="radio"]:checked + 
+.radio-indicator::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 7px;
+    background-color: #000;
+}
+
+
+/* Витрина*/
+
+h2.item-filter {
+    margin-top: 55px;
+}
+
+.showcase-item {
+    float: left;
+
+    margin: 20px 0px;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding: 0;
+
+
+    width: 220px;
+    min-height: 285px;
+
+    background: white;
+}
+
+.showcase-item:nth-child(3n){
+    float: right;
+    margin-right: 0;
+}
+
+.showcase-item > p {
+    margin: 15px; 
+    margin-right: 59px;
+
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: none;
+}
+
+.item-price {
+    font-size:0;
+    margin: 15px;
+}
+
+.item-price p {
+    display: inline-block;
+    width: 110px;
+    padding: 10px 0;
+    margin: 0;
+    margin-right: 0;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    
+    background-color: #e5e5e5;
+    border: none;
+    outline: none;
+
+}
+
+.item-price .btn {
+    padding: 10px 0px;
+    margin: 0;
+
+    width: 80px;   
+}
+ 
+/* Навигация по витрине */
+
+.showcase-navigation {
+    float: left;
+}
+
+ ul.showcase-navigation {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.showcase-navigation li {
+    display: inline-block;
+    
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+
+    margin-right: 7px;
+}
+
+.showcase-navigation a, .showcase-navigation span {
+    display: block;
+    box-sizing: border-box;
+    width: 43px;
+    height: 43px;
+    padding: 12px 12px;
+    
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #000;
+}
+
+.showcase-navigation a:hover {
+    background: #663d15;
+}
+
+.showcase-navigation .active {
+    position: relative;
+}
+
+.showcase-navigation .active span {
+    display: block;
+    background: #fff;
+    color: #000;;
+}
+
+.showcase-navigation .active a:hover {
+    background: none;
+}
+
+
+
+
+
 
 /*FOOTER*/
 
@@ -674,6 +946,10 @@ body {
     
     background-color: #fff;
 }
+
+
+
+
 /* Всплывающие формы*/
 
 /* Анимация для формы входа*/
@@ -903,58 +1179,6 @@ body {
 }
 
 .login-checkbox input[type="checkbox"]:checked + 
-.checkbox-indicator::after {
-    transform: rotate(-45deg);
-}
-
-.showcase-checkbox input[type="checkbox"] {
-    display: none;
-}
-
-.showcase-checkbox {
-    position: relative;
-
-    padding-left: 30px;
-
-    cursor: pointer;
-}
-
-.showcase-checkbox:hover {
-    color: #663d15; 
-}
-
-.showcase-checkbox input[type="checkbox"] + .checkbox-indicator {
-    position: absolute;
-    top: -3px;
-    left: 0;
-
-    width: 17px;
-    height: 17px;
-
-    border: 2px solid #000;
-}
-
-.showcase-checkbox input[type="checkbox"]:checked + 
-.checkbox-indicator::before,
-.showcase-checkbox input[type="checkbox"]:checked + 
-.checkbox-indicator::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 1px;
-
-    width: 15px;
-    height: 2px;
-
-    background-color: #000;
-}
-
-.showcase-checkbox input[type="checkbox"]:checked + 
-.checkbox-indicator::before {
-    transform: rotate(45deg);
-}
-
-.showcase-checkbox input[type="checkbox"]:checked + 
 .checkbox-indicator::after {
     transform: rotate(-45deg);
 }
