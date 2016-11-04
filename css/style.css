@@ -838,8 +838,39 @@ h2.item-filter {
     background: none;
 }
 
+/* Стили для карточки товара*/
+.item-photo-preview {
+    margin-top: 20px;
+    font-size: 0;
+}
 
+.item-photo-preview img {
+    margin-right: 20px;
+}
 
+.item-photo-preview img:nth-child(3n) {
+    margin-right: 0;
+}
+
+.item-description {
+    margin-left: 70px;
+    width: 380px;
+
+}
+
+.item-description .item-price {
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+.item-availability {
+    float: left;
+}
+
+.item-article {
+    float: right;
+    color: #aba9a7;
+}
 
 
 
