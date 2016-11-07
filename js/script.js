@@ -1,3 +1,7 @@
+// Переопределение стилей при работающем js
+var html = document.documentElement;
+html.className = html.className.replace("no-js", "js")
+
 // Попап формы входа
 var link = document.querySelector(".login");
 var popup = document.querySelector(".modal-content");
